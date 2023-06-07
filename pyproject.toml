@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "test-github-actions"
+version = "0.1.0"
+description = ""
+authors = ["Matthias Roussel <matthias.roussel@soyhuce.fr>"]
+readme = "README.md"
+packages = [{include = "test_github_actions"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.12"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.17.4"
+pytest = "^7.3.1"
+pre-commit = "^3.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+# Default Pylint config
+
+[tool.pylint.format]
+# Maximum number of characters on a single line.
+max-line-length = 100
+
+# Maximum number of lines in a module.
+max-module-lines = 1000
+
+[tool.pylint.imports]
+allow-wildcard-with-all = true
