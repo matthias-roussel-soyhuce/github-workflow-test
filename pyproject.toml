@@ -30,3 +30,9 @@ max-module-lines = 1000
 
 [tool.pylint.imports]
 allow-wildcard-with-all = true
+
+[tool.pylint."message control"]
+disable = [
+    "unused-variable",
+    "import-error",  # Pylint doesn't understand anything to imports, let your IDE handle them.
+]
