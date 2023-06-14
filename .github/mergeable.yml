@@ -4,6 +4,6 @@ mergeable:
     name: 'Approval check'
     validate:
       - do: approvals
-        limit:
-          users: [ 'matthias-roussel-soyhuce', 'dlaugiersoyhuce' ]
+        required:
+          reviewers: [ 'matthias-roussel-soyhuce', 'dlaugiersoyhuce' ]
           owners: true
