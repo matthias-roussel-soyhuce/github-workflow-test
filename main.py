@@ -1,5 +1,7 @@
 """Exemple Python code to test Pylint capabilities."""
 
+from src.backend.functions import hello as hello_backend
+from src.frontend.functions import hello as hello_frontend
 
 def run_pylint_uncompliant_code():
     """
@@ -59,6 +61,8 @@ def run_pylint_uncompliant_code():
 def main():
     """Main function."""
     run_pylint_uncompliant_code()
+    hello_backend()
+    hello_frontend()
 
 
 if __name__ == "__main__":
