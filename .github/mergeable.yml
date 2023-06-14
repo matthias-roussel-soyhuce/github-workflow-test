@@ -5,5 +5,5 @@ mergeable:
     validate:
       - do: approvals
         required:
-          reviewers: [ 'matthias-roussel-soyhuce', 'dlaugiersoyhuce' ]
+          reviewers: [ 'matthias-roussel-soyhuce', 'matthiasrsl' ]
           owners: true
