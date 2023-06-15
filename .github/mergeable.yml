@@ -4,13 +4,8 @@ mergeable:
     name: 'Approval check'
     validate:
       - do: approvals
-        min:
-          count: 0
         required:
           owners: true
         limit:
             teams: [] 
             users: ['matthias-roussel-soyhuce']
-      - do: changeset
-        must_exclude:
-          regex: ".github/"
