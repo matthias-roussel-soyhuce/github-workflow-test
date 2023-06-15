@@ -1,1 +1,8 @@
-
+version: 2
+mergeable:
+  - when: pull_request.*, pull_request_review.*
+    name: 'Approval check'
+    validate:
+      - do: approvals
+        required:
+          owners: false
