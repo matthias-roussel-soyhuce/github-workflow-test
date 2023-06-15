@@ -10,7 +10,7 @@ mergeable:
           owners: true
         limit:
             teams: [] 
-            users: ['matthias-roussel-soyhuce']
+            users: ['matthias-roussel-soyhuce', 'matthiasrsl']
       - do: changeset
         must_exclude:
           regex: ".github/"
