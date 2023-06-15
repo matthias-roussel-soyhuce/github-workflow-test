@@ -5,10 +5,9 @@ mergeable:
     validate:
       - do: approvals
         min:
-          count: 2 # Number of minimum reviewers. In this case 2.
-        #required:
-        #  reviewers: [ 'matthias-roussel-soyhuce', 'matthiasrsl' ]
-        #  owners: true
+          count: 1 
+        required:
+          owners: true
         limit:
             teams: [] 
             users: ['matthias-roussel-soyhuce', 'matthiasrsl']
