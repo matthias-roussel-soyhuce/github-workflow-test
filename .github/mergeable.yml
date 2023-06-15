@@ -8,7 +8,7 @@ mergeable:
           count: 1
         limit:
             teams: [] 
-            users: ['matthias-roussel-soyhuce']
+            users: ['matthiasrsl']
       - do: changeset
         must_exclude:
           regex: ".github/"
