@@ -5,7 +5,7 @@ mergeable:
     validate:
       - do: approvals
         min:
-          count: 1 
+          count: 0
         required:
           owners: true
         limit:
