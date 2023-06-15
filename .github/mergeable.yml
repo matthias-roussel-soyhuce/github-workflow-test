@@ -5,9 +5,7 @@ mergeable:
     validate:
       - do: approvals
         min:
-          count: 1 
-        required:
-          owners: true
+          count: 1
         limit:
             teams: [] 
             users: ['matthias-roussel-soyhuce']
